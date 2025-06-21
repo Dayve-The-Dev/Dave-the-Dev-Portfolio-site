@@ -281,7 +281,7 @@ footer {
 }
 
 /* MOBILE NAV */
-@media (max-width: 768px) {
+@media (max-width: 4000px) {
   .header-container {
     flex-direction: column;
     align-items: center;
