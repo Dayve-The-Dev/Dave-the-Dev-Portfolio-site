@@ -88,21 +88,22 @@ header {
   color: #1a3c66;
   padding: 20px;
   position: relative;
+  margin-bottom: 0;
 }
 
-nav {
+.nav {
   display: flex;
   font-size: 1.5rem;
   gap: 15px;
 }
 
-nav a {
+.nav a {
   color: #000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav a:hover {
   color: var(--hover-blue);
 }
 
@@ -112,8 +113,9 @@ nav a:hover {
   background-size: 400% 400%;
   animation: gradientBG 10s ease infinite;
   text-align: center;
-  padding: 60px 20px 10px; /* tighter bottom space */
+  padding: 60px 20px 10px;
   color: #1a1a1a;
+  margin-top: 0;
 }
 
 @keyframes gradientBG {
@@ -144,7 +146,7 @@ section {
 }
 
 #projects {
-  padding-top: 10px; /* override default padding */
+  padding-top: 10px;
   animation-delay: 0.1s;
 }
 
@@ -208,11 +210,11 @@ footer {
   color: #e0e0e0;
 }
 
-.dark-mode nav a {
+.dark-mode .nav a {
   color: #ddd;
 }
 
-.dark-mode nav a:hover {
+.dark-mode .nav a:hover {
   color: var(--hover-blue);
 }
 
@@ -243,6 +245,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .theme-toggle .icon {
@@ -277,6 +280,7 @@ footer {
   box-shadow: inset -5px -5px 0 0 #333;
 }
 
+/* MOBILE NAV */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -312,9 +316,3 @@ footer {
   .theme-toggle {
     margin-top: 10px;
   }
-}
-
-  .theme-toggle {
-    margin-top: 10px;
-  }
-}
